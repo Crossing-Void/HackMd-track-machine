@@ -2,6 +2,7 @@ from Tkinter_template.base import Interface
 from Tkinter_template.Assets.music import Music
 from Tkinter_template.Assets.default_menu import canvas_cover
 from Tkinter_template.Assets.default_dashboard import MusicPlayer
+import time
 
 
 class Main(Interface):
@@ -22,3 +23,4 @@ if __name__ == '__main__':
     while True:
         app.canvas.update()
         app.Musicplayers.set_ball()
+        time.sleep(0.02)
